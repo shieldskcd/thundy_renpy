@@ -1,10 +1,10 @@
 define e = Character("Eileen", color = "#FF0044")
 define d = Character("Dave", color = "#0033FF")
-
+image main_bg = "bg01.jpeg"
 
 label start:
 
-    scene bg room
+    scene main_bg
 
     show eileen happy
 
