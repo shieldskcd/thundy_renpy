@@ -1,10 +1,10 @@
 define e = Character("Eileen", color = "#FF0044")
 define d = Character("Dave", color = "#0033FF")
-image main_bg = "bg01.jpeg"
+image main_bg = im.Scale("bg01.jpeg", 1920, 1080)
 
 label start:
 
-    scene main_bg
+    show main_bg
 
     show eileen happy
 
