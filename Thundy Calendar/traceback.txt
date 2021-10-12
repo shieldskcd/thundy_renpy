@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 21, in script
+    if Minutes = 60:
+SyntaxError: invalid syntax (script.rpy, line 21)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 21, in script
+    if Minutes = 60:
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 1898, in execute
+    if renpy.python.py_eval(condition):
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2274, in py_eval
+    code = py_compile(code, 'eval')
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (script.rpy, line 21)
+
+Darwin-20.6.0-x86_64-i386-64bit
+Ren'Py 7.4.9.2142
+Thundy Calendar 1.0
+Tue Oct 12 12:53:15 2021
