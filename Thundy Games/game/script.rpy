@@ -1,5 +1,5 @@
-define e = Character("Eileen")
-define d = Character("Dave")
+define e = Character("Eileen", color = "#FF0044")
+define d = Character("Dave", color = "#0033FF")
 
 
 label start:
@@ -13,8 +13,31 @@ label start:
 
     d "Hi, Eileen!"
 
-    e "Hello, Dave, How are you?"
+    e "Hello, Dave, How was your day?"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    menu:
+        "My Day Was Great! Thanks Eileen":
+            call GoodDay
+
+        "My Day Was Not too Great.":
+            jump BadDay
+
+        "My Day Was Good but go to part B":
+            call GoodDayB
+
+    "This code ends the Start Block"
+
+    return
+
+label GoodDay:
+    e "I am glad you had a good day!"
+
+label GoodDayB:
+    e "Part 2 of the Good Day block"
+
+    return
+
+label BadDay:
+    e "I am sorry you had a bad day"
 
     return
