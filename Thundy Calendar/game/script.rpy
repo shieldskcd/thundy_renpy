@@ -21,6 +21,9 @@ label start:
         if Minutes == 60:
             $ Hours += 1
             $ Minutes = 0
+        if Hours == 24:
+            $ Hours = 0
+            
 
 
     return
