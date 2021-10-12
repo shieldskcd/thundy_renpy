@@ -8,21 +8,25 @@ image red03 = "3.png"
 
 label start:
 
+    call variables
+
     show main_bg
 
     "You are walking through your college campus and see a familiar face,
     you think it is your friend Eileen from school."
 
-    $ t = 1
-    while t < 3:
-        show expression("[t].png")
-        "click"
-        $ t += 1
+    #$ t = 1
+    #while t < 3:
+    #    show expression("[t].png")
+    #    "click"
+    #    $ t += 1
 
 
     d "Hi, Eileen!"
 
-    e "Hello, Dave, How was your day?"
+    show red01
+
+    e "Hello, [PlayerName], How was your day?"
 
     menu:
         "My Day Was Great! Thanks Eileen":
@@ -34,14 +38,16 @@ label start:
         "My Day Was Good but go to part B":
             call GoodDayB
 
-    "This code ends the Start Block"
     scene
     return
 
 label GoodDay:
     hide red01
     show red02
-    e "I am glad you had a good day!"
+    $ PlayerScore += 10
+    e "I am glad you had a good day! Your score is [PlayerScore]"
+    $ PlayerName += "\nNimrod"
+    e "I will start calling you [PlayerName]"
 
 label GoodDayB:
     e "Part 2 of the Good Day block"
@@ -51,6 +57,12 @@ label GoodDayB:
 label BadDay:
     hide red01
     show red03
-    e "I am sorry you had a bad day"
+    $ PlayerScore -= 1
+    e "I am sorry you had a bad day, Your score is [PlayerScore]"
+    return
+
+label variables:
+    $ PlayerScore = 0
+    $ PlayerName = "Dave"
 
     return
