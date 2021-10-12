@@ -1,9 +1,10 @@
 define e = Character("Eileen", color = "#FF0044")
 define d = Character("Dave", color = "#0033FF")
 image main_bg = im.Scale("bg01.jpeg", 1920, 1080)
-image red01 = "red01.png"
-image red02 = "red02.png"
-image red03 = "red03.png"
+image red01 = "1.png"
+image red02 = "2.png"
+image red03 = "3.png"
+
 
 label start:
 
@@ -12,7 +13,12 @@ label start:
     "You are walking through your college campus and see a familiar face,
     you think it is your friend Eileen from school."
 
-    show red01
+    $ t = 1
+    while t < 3:
+        show expression("[t].png")
+        "click"
+        $ t += 1
+
 
     d "Hi, Eileen!"
 
@@ -29,7 +35,7 @@ label start:
             call GoodDayB
 
     "This code ends the Start Block"
-
+    scene
     return
 
 label GoodDay:
