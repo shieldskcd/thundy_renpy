@@ -33,6 +33,7 @@ label start:
     return
 
 label GoodDay:
+    hide red01
     show red02
     e "I am glad you had a good day!"
 
@@ -42,6 +43,7 @@ label GoodDayB:
     return
 
 label BadDay:
+    hide red01
     show red03
     e "I am sorry you had a bad day"
 
