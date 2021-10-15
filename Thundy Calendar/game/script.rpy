@@ -12,7 +12,7 @@ label start:
     show main_bg
     $ GameRunning = True
     while GameRunning:
-        $ Output = WeekDays[Day] + " " + Months[Month] + " " + str(Days + 1) + " " +str(Hours) + ":" + str(Minutes)
+        $ Output = WeekDays[Day] + " " + Months[Month] + " " + str(Days + 1) + " " +str(Hours).zfill(2) + ":" + str(Minutes).zfill(2)
         "[Output]"
         $ Minutes += 30
         if Minutes > 30:
@@ -30,6 +30,8 @@ label start:
         if Month > 11:
             $ Month = 0
 
+        call EventCheck
+
     return
 
 
@@ -44,5 +46,13 @@ label variables:
     $ Month = 0
     $ Day = 0
     $ Days = 0
+
+    return
+
+label EventCheck:
+    if (Hours == 12) and (Minutes == 0) and (Days == 2) and (Month == 0):
+        show red02
+        "This is an event"
+        hide red02
 
     return
