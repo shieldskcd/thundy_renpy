@@ -12,25 +12,9 @@ label start:
     show main_bg
     $ GameRunning = True
     while GameRunning:
-        $ Output = WeekDays[Day] + " " + Months[Month] + " " + str(Days + 1) + " " +str(Hours).zfill(2) + ":" + str(Minutes).zfill(2)
-
         "Click"
-
-        $ Minutes += 30
-        if Minutes > 30:
-            $ Minutes = 0
-            $ Hours += 1
-        if Hours > 23:
-            $ Hours = 0
-            $ Day += 1
-            $ Days += 1
-        if Day > 6:
-            $ Day = 0
-        if Days > MonthDays[Month]:
-            $ Month += 1
-            $ Days = 0
-        if Month > 11:
-            $ Month = 0
+        $ calendar.AddTime(1)
+        $ Output = calendar.Output
 
         call EventCheck
 
@@ -39,6 +23,8 @@ label start:
 
 
 label variables:
+    $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August",
+    "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
     $ WeekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     $ Months = ["January", "February", "March", "April", "May", "June", "July", "August",
     "September", "October", "November", "December"]
