@@ -98,6 +98,13 @@ style frame:
 screen say(who, what):
     style_prefix "say"
 
+    frame:
+        xpos 0 ypos 0
+        xminimum 1920
+        yminimum 75
+        ymaximum 75
+        text "[Output]" xalign 0.5
+
     window:
         id "window"
 
