@@ -10,8 +10,8 @@ init python:
             self.WeekDays = WeekDays
             self.MonthDays = MonthDays
             @property
-        def Output(self):
-            return self.WeekDays[self.Day] + " " + self.Months[self.Month] + " " + str(self.Days + 1) + " " + str(self.Hours).zfill(2)
+            def Output(self):
+                return self.WeekDays[self.Day] + " " + self.Months[self.Month] + " " + str(self.Days + 1) + " " + str(self.Hours).zfill(2)
 
         def AddTime(self, hours):
             self.Hours += hours

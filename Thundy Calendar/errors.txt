@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/events.rpy", line 13: unexpected indent
+                def Output(self):
+                ^
+    
+
+Ren'Py Version: Ren'Py 7.4.9.2142
+Mon Oct 18 12:36:39 2021
