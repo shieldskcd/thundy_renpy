@@ -7,14 +7,12 @@ image red03 = "3.png"
 
 
 label start:
-
     call variables
-    show main_bg
+    ## show main_bg
     $ GameRunning = True
     while GameRunning:
+        $ Output = WeekDays[Day] + " " + Months[Month] + " " + str(Days+1).zfill(2) + ":" + str(Minutes).zfill(2)
         "Click"
-        $ calendar.AddTime(1)
-        $ Output = calendar.Output
 
         call EventCheck
 
