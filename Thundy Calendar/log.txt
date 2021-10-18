@@ -1,14 +1,14 @@
-Mon Oct 18 16:52:03 2021
+Mon Oct 18 17:21:25 2021
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.9.2142
  
 
-Bootstrap to the start of init.init took 0.08s
-Early init took 0.05s
-Loader init took 0.02s
-Loading error handling took 0.03s
-Loading script took 0.16s
-Loading save slot metadata. took 0.01s
+Bootstrap to the start of init.init took 0.10s
+Early init took 0.04s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.13s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
@@ -26,9 +26,9 @@ Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
+Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.09s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s

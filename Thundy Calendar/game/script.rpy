@@ -13,17 +13,19 @@ label start:
     while GameRunning:
         "click"
         $ calendar.AddTime(4)
+        if EventOne.DateCheck(calendar):
+            call expression EventOne.Block
 
-        call EventCheck
     return
 
 
 
 label variables:
     $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-
+    $ EventOne = Event(12, 2, 0, "EvOne", True)
     return
 
-label EventCheck:
-
+label EvOne:
+    "this is Event One's Block"
+    $ EventOne.SetInactive()
     return

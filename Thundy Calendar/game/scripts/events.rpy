@@ -26,3 +26,18 @@ init python:
                 self.Days = 0
             if self.Month > 11:
                 self.Month = 0
+
+    class Event(object):
+        def __init__(self, Hour, Day, Month, Block, IsActive):
+            self.Hour = Hour
+            self.Day = Day
+            self.Month = Month
+            self.Block = Block
+            self.IsActive = IsActive
+        def DateCheck(self,c):
+            if self.Day == c.Days and self.Hour == c.Hours and self.Month == c.Month and self.IsActive:
+                return True
+            else:
+                return False
+        def SetInactive(self):
+            self.IsActive = False
