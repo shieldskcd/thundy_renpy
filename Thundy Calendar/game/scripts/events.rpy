@@ -11,11 +11,11 @@ init python:
             self.MonthDays = MonthDays
         @property
         def Output(self):
-            return self.WeekDays[self.Day] + " " + self.Months[self.Month] + " " + str(self.Days+1) + " " + str(self.Hours).zfill(2)
+            return self.WeekDays[self.Day] + " " + self.Months[self.Month] + " " + str(self.Days+1) + " " + str(self.Hours).zfill(2) + ":" + "00"
 
         def AddTime(self, hours):
             self.Hours += hours
-            if Hours > 23:
+            if self.Hours > 23:
                 self.Hours -= 24
                 self.Day += 1
                 self.Days += 1
