@@ -12,7 +12,22 @@ label start:
     $ GameRunning = True
     while GameRunning:
         $ Output = WeekDays[Day] + " " + Months[Month] + " " + str(Days+1).zfill(2) + ":" + str(Minutes).zfill(2)
+
         "Click"
+
+        $ Minutes += 30
+        if Minutes > 30:
+            $ Minutes = 0
+            $ Hours += 1
+        if Hours > 23:
+            $ Hours = 0
+            $ Day += 1
+            $ Days += 1
+        if Days > MonthDays[Month]:
+            $ Month += 1
+            $ Days = 0
+        if Month > 11:
+            $ Month = 0
 
         call EventCheck
 
