@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/events.rpy", line 13: unexpected indent
-                def Output(self):
-                ^
-    
+File "game/script.rpy", line 19: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    call EventCheck
+    ^
 
 Ren'Py Version: Ren'Py 7.4.9.2142
-Mon Oct 18 12:36:39 2021
+Mon Oct 18 12:44:05 2021
