@@ -1,34 +1,90 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 10, in script call
-    call variables
-  File "game/script.rpy", line 39, in script
-    $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August",
-  File "game/script.rpy", line 40, in <module>
-    "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-  File "game/scripts/events.rpy", line 11, in __init__
-    self.MonthDays = Monthdays
-NameError: global name 'Monthdays' is not defined
+  File "game/script.rpy", line 14, in script
+    "click"
+  File "game/script.rpy", line 14, in script
+    "click"
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 101, in execute
+    frame:
+NameError: Name 'Output' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 10, in script call
-    call variables
-  File "game/script.rpy", line 39, in script
-    $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August",
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 40, in <module>
-    "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-  File "game/scripts/events.rpy", line 11, in __init__
-    self.MonthDays = Monthdays
-NameError: global name 'Monthdays' is not defined
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/main.py", line 652, in main
+    run(restart)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/execution.py", line 922, in run_context
+    context.run()
+  File "game/script.rpy", line 14, in script
+    "click"
+  File "game/script.rpy", line 14, in script
+    "click"
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 691, in execute
+    statement_name("say")
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 46, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/exports.py", line 1682, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 2752, in do_with
+    clear=clear)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 101, in execute
+    frame:
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1669, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1693, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 228, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'Output' is not defined.
 
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.9.2142
 Thundy Calendar 1.0
-Mon Oct 18 16:17:21 2021
+Mon Oct 18 16:41:59 2021
