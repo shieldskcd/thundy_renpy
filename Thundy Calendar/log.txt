@@ -1,38 +1,48 @@
-Mon Oct 18 12:44:21 2021
+Mon Oct 18 16:14:31 2021
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.9.2142
  
 
-Bootstrap to the start of init.init took 0.11s
-Early init took 0.03s
-Loader init took 0.03s
+Bootstrap to the start of init.init took 0.08s
+Early init took 0.01s
+Loader init took 0.02s
 Loading error handling took 0.03s
-Loading script took 0.18s
-Loading save slot metadata. took 0.02s
+/Users/daveshields/Documents/RenPy/code/thundy_renpy/thundy_renpy/Thundy Calendar/game/archive/script.rpy label start:
+
+/Users/daveshields/Documents/RenPy/code/thundy_renpy/thundy_renpy/Thundy Calendar/game/archive/script.rpy label start:
+
+/Users/daveshields/Documents/RenPy/code/thundy_renpy/thundy_renpy/Thundy Calendar/game/archive/script.rpy label variables:
+
+/Users/daveshields/Documents/RenPy/code/thundy_renpy/thundy_renpy/Thundy Calendar/game/archive/script.rpy label variables:
+
+/Users/daveshields/Documents/RenPy/code/thundy_renpy/thundy_renpy/Thundy Calendar/game/archive/script.rpy label EventCheck:
+
+/Users/daveshields/Documents/RenPy/code/thundy_renpy/thundy_renpy/Thundy Calendar/game/archive/script.rpy label EventCheck:
+
+Loading script took 0.24s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
+
+The label start is defined twice, at File "game/archive/script.rpy", line 9:
+label start:
+and File "game/script.rpy", line 9:
+label start:
+
+
+The label variables is defined twice, at File "game/archive/script.rpy", line 25:
+label variables:
+and File "game/script.rpy", line 38:
+label variables:
+
+
+The label EventCheck is defined twice, at File "game/archive/script.rpy", line 40:
+label EventCheck:
+and File "game/script.rpy", line 53:
+label EventCheck:
+
 DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.21s
+Interface start took 0.32s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -44,206 +54,3 @@ Version: '2.1 ATI-4.6.20'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 15, in script
-    "Click"
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 691, in execute
-    statement_name("say")
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 46, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/exports.py", line 1682, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 2752, in do_with
-    clear=clear)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 436, in visit_all
-    callback(self)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 447, in per_interact
-    self.update()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 637, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 101, in execute
-    frame:
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1669, in _scope
-    return self.set_text(self.text_parameter, scope, self.substitute, update)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1693, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 228, in __getitem__
-    raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name 'Output' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 15, in script
-    "Click"
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 101, in execute
-    frame:
-NameError: Name 'Output' is not defined.
-While handling exception:
-Traceback (most recent call last):
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/error.py", line 145, in report_exception
-    traceback_fn=traceback_fn,
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/game.py", line 284, in invoke_in_new_context
-    return callable(*args, **kwargs)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/error.py", line 46, in call_exception_screen
-    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 436, in visit_all
-    callback(self)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 447, in per_interact
-    self.update()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 637, in update
-    self.screen.function(**self.scope)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/sl2/slast.py", line 2428, in __call__
-    self.execute(context)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/sl2/slast.py", line 2367, in execute
-    SLBlock.execute(self.const_ast, context)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/sl2/slast.py", line 428, in execute
-    i.execute(context)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/sl2/slast.py", line 984, in execute
-    i.execute(ctx)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/sl2/slast.py", line 942, in execute
-    d = self.displayable(*positional, **keywords)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1574, in __init__
-    self.set_text(text, scope, substitute)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1693, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 228, in __getitem__
-    raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name 'Output' is not defined.
-
-Full traceback:
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/main.py", line 652, in main
-    run(restart)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/execution.py", line 922, in run_context
-    context.run()
-  File "game/script.rpy", line 15, in script
-    "Click"
-  File "game/script.rpy", line 15, in script
-    "Click"
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 691, in execute
-    statement_name("say")
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 46, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/exports.py", line 1682, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 2752, in do_with
-    clear=clear)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 436, in visit_all
-    callback(self)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 447, in per_interact
-    self.update()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 637, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 101, in execute
-    frame:
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1669, in _scope
-    return self.set_text(self.text_parameter, scope, self.substitute, update)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/text/text.py", line 1693, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/substitutions.py", line 228, in __getitem__
-    raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name 'Output' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 15, in script
-    "Click"
-  File "game/script.rpy", line 15, in script
-    "Click"
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 98, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 101, in execute
-    frame:
-NameError: Name 'Output' is not defined.

@@ -2,9 +2,23 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    call EventCheck
-    ^
+The label start is defined twice, at File "game/archive/script.rpy", line 9:
+label start:
+and File "game/script.rpy", line 9:
+label start:
+
+
+The label variables is defined twice, at File "game/archive/script.rpy", line 25:
+label variables:
+and File "game/script.rpy", line 38:
+label variables:
+
+
+The label EventCheck is defined twice, at File "game/archive/script.rpy", line 40:
+label EventCheck:
+and File "game/script.rpy", line 53:
+label EventCheck:
+
 
 Ren'Py Version: Ren'Py 7.4.9.2142
-Mon Oct 18 12:44:05 2021
+Mon Oct 18 16:14:32 2021
