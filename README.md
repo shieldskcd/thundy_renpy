@@ -20,5 +20,7 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 17. Finally got the Calendar to work, it appears as though I had removed some of the needed code in the script.rpy file that was modifying calendar.
 18. Adjusted the AddTime to add 4 hours instead of 1 per click.
 19. Notified Reddit and Lemma Soft forums that issue was resolved.
+20. Created a new class for Event Checks using a function
+21. Wrote code instructions to check for the event trigger on the 3rd day at 12PM.
 
-## We are now on lesson 12.
+## We are now on lesson 13.
