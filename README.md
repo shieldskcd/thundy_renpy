@@ -15,5 +15,13 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 12. Used variable changes to modify the name of the character (now commented out as it was for illustrative purposes)
 13. Included text that shows the values of Player Name and Score
 14. Used variable changes to increase or decrease the score of the player based on whether they had a good or bad day.
+15. Created a new screen at the top of the main window to house the calendar.
+16. Created a new file for events and create a class for the clock that can be called across the game system
+17. Attempted to create a output for the calendar that is failing repeatedly
+18. I am now stuck and am seeking assistance.
 
-## We are now about to begin lesson 6.
+## We are now stuck on lesson 11.
+
+## Opened threads to the Ren'Py community to get assistance
+1. Ren'Py Subreddit - https://www.reddit.com/r/RenPy/comments/q8yhsy/calendar_object_not_accepting_properties/
+2. Lemma Soft forum - https://lemmasoft.renai.us/forums/viewtopic.php?f=8&t=63342
