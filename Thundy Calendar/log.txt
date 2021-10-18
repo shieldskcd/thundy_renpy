@@ -1,21 +1,22 @@
-Mon Oct 18 16:17:17 2021
+Mon Oct 18 16:20:13 2021
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.9.2142
  
 
-Bootstrap to the start of init.init took 0.09s
+Bootstrap to the start of init.init took 0.07s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.03s
-Loading script took 0.15s
+Loading error handling took 0.02s
+Loading script took 0.17s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.07s
+Running init code took 0.05s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.07s
+Backing up script files to '/Users/daveshields/Library/RenPy/backups/Thundy Calendar':
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
@@ -25,14 +26,14 @@ Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
+Analyze screens took 0.01s
 Save screen analysis took 0.03s
 Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.18s
+Interface start took 0.19s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -44,39 +45,4 @@ Version: '2.1 ATI-4.6.20'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 10, in script call
-    call variables
-  File "game/script.rpy", line 39, in script
-    $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August",
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 40, in <module>
-    "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-  File "game/scripts/events.rpy", line 11, in __init__
-    self.MonthDays = Monthdays
-NameError: global name 'Monthdays' is not defined
-
-While running game code:
-  File "game/script.rpy", line 10, in script call
-    call variables
-  File "game/script.rpy", line 39, in script
-    $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August",
-  File "game/script.rpy", line 40, in <module>
-    "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-  File "game/scripts/events.rpy", line 11, in __init__
-    self.MonthDays = Monthdays
-NameError: global name 'Monthdays' is not defined
-<property object at 0x7fc2c761a7d0>
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 673, in run
-    result = renpy.python.py_eval(code)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'exot' is not defined
+<property object at 0x7f86201290b0>
