@@ -41,3 +41,8 @@ init python:
                 return False
         def SetInactive(self):
             self.IsActive = False
+    EVENTS = []
+    t = 0
+    while t < 50:
+        EVENTS.append(Events(0, 0, "", False))
+        t += 1

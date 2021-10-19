@@ -11,10 +11,15 @@ label start:
     show main_bg
     $ GameRunning = True
     while GameRunning:
+        $ BlockToCall = ""
         "click"
         $ calendar.AddTime(4)
-        if EventOne.DateCheck(calendar):
-            call expression EventOne.Block
+        python:
+            for q in EVENTS:
+                if q.DateCheck(calendar):
+                    BlockToCall = q.Block
+        if BlockToCall <> "":
+            call expression BlockToCall
 
     return
 
@@ -22,10 +27,10 @@ label start:
 
 label variables:
     $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-    $ EventOne = Event(12, 2, 0, "EvOne", True)
+    $ EVENTS[0] = Event(12, 2, 0, "EvOne", True)
     return
 
 label EvOne:
     "this is Event One's Block"
-    $ EventOne.SetInactive()
+    $ EVENTS[0].SetInactive()
     return
