@@ -9,24 +9,19 @@ image red03 = "3.png"
 label start:
     call variables
     show main_bg
+    $ GameRunning = True
+    while GameRunning:
+        menu:
+            "Add apple":
+                $ Inventory[0].AddItem()
+            "Display weight":
+                $ wt = Inventory[0].CurrentWeight
+                "The Current Weight is [wt]"
 
     return
 
 
 
 label variables:
-    $ calendar = Calendar(0, 0, 0, 0, ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], 0, ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31])
-    $ EVENTS[0] = Event(12, 2, 0, "EvOne", True)
-    $ EVENTS[1] = Event(16, 2, 0, "EvTwo", True)
     $ Inventory[0] = Items("apple", 1, 1, 0, 0)
-    return
-
-label EvOne:
-    "this is Event One's Block"
-    $ EVENTS[0].SetInactive()
-    return
-
-label EvTwo:
-    "this is Event Two's Block"
-    $ EVENTS[0].SetInactive()
     return
