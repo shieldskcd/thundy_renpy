@@ -44,5 +44,5 @@ init python:
     EVENTS = []
     t = 0
     while t < 50:
-        EVENTS.append(Events(0, 0, "", False))
+        EVENTS.append(Event(0, 0, 0, "", False))
         t += 1

@@ -1,26 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 17, in script call
-    call expression EventOne.Block
-  File "game/script.rpy", line 17, in script call
-    call expression EventOne.Block
-ScriptError: could not find label 'EveOne'.
+  File "game/scripts/events.rpy", line 1, in script
+    init python:
+  File "game/scripts/events.rpy", line 1, in script
+    init python:
+  File "game/scripts/events.rpy", line 47, in <module>
+    EVENTS.append(Event(0, 0, "", False))
+TypeError: __init__() takes exactly 6 arguments (5 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 17, in script call
-    call expression EventOne.Block
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 1490, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 17, in script call
-    call expression EventOne.Block
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/script.py", line 918, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'EveOne'.
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/main.py", line 550, in main
+    renpy.game.context().run(node)
+  File "game/scripts/events.rpy", line 1, in script
+    init python:
+  File "game/scripts/events.rpy", line 1, in script
+    init python:
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/events.rpy", line 47, in <module>
+    EVENTS.append(Event(0, 0, "", False))
+TypeError: __init__() takes exactly 6 arguments (5 given)
 
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.9.2142
 Thundy Calendar 1.0
-Mon Oct 18 17:20:49 2021
+Tue Oct 19 17:32:11 2021
