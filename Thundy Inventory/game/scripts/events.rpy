@@ -51,8 +51,8 @@ init python:
             self.ID = ID
         def AddItem(self):
             MaxWeight = 50
-    
-            if CurrentWeight + self.weight > MaxWeight:
+
+            if self.CurrentWeight + self.weight > MaxWeight:
                 return
             else:
                 self.NoOwned += 1
@@ -60,7 +60,7 @@ init python:
         def CurrentWeight(self):
             CurrentW = 0
             for q in Inventory:
-                CurrentWeight += (q.weight * q.NoOwned)
+                CurrentW += (q.weight * q.NoOwned)
             return CurrentW
 
     EVENTS = []

@@ -103,7 +103,7 @@ screen say(who, what):
         xminimum 1920
         yminimum 75
         ymaximum 75
-        text "[calendar.Output]" xalign 0.5
+        text "[Inventory[0].CurrentWeight]" xalign 0.5
 
     window:
         id "window"

@@ -14,6 +14,14 @@ label start:
         menu:
             "Add apple":
                 $ Inventory[0].AddItem()
+            "Add Sword":
+                $ Inventory[1].AddItem()
+            "Display number of apples":
+                $tmp = Inventory[0].NoOwned
+                "You have [tmp] Apples"
+            "Display number of Swords":
+                $tmp = Inventory[1].NoOwned
+                "You have [tmp] Swords"
             "Display weight":
                 $ wt = Inventory[0].CurrentWeight
                 "The Current Weight is [wt]"
@@ -23,5 +31,6 @@ label start:
 
 
 label variables:
-    $ Inventory[0] = Items("apple", 1, 1, 0, 0)
+    $ Inventory[0] = Items("apple", 1, 2, 0, 0)
+    $ Inventory[1] = Items("Sword", 100, 20, 0, 1)
     return
