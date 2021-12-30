@@ -22,5 +22,10 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 19. Notified Reddit and Lemma Soft forums that issue was resolved.
 20. Created a new class for Event Checks using a function
 21. Wrote code instructions to check for the event trigger on the 3rd day at 12PM.
+22. Created a new inventory system that tracks the items and weight
+23. Added the ability to add an apple and a sword
+24. Added a core display for the weight in the top center of the menu screen
+25. Added limitation so that weight cannot be greater than 50. 
+26. Added buttons to allow display of invdividual items and weights
 
-## We are now on lesson 13.
+## We are now on lesson 15.
