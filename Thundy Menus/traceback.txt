@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 10, in script call
+    call variables
+  File "game/script.rpy", line 35, in script
+    $ Inentory[1] = Items("Sword", 100, 20, 0, 1)
+  File "game/script.rpy", line 35, in <module>
+    $ Inentory[1] = Items("Sword", 100, 20, 0, 1)
+NameError: name 'Inentory' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 10, in script call
+    call variables
+  File "game/script.rpy", line 35, in script
+    $ Inentory[1] = Items("Sword", 100, 20, 0, 1)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 35, in <module>
+    $ Inentory[1] = Items("Sword", 100, 20, 0, 1)
+NameError: name 'Inentory' is not defined
+
+Darwin-20.6.0-x86_64-i386-64bit
+Ren'Py 7.4.9.2142
+Thundy Inventory 1.0
+Thu Dec 30 12:55:18 2021
