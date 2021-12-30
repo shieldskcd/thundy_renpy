@@ -254,7 +254,7 @@ screen quick_menu():
 
     if quick_menu:
 
-        vbox:
+        hbox:
             style_prefix "quick"
 
             xalign 0.0
