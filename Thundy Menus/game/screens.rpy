@@ -254,10 +254,10 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
+        vbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.0
             yalign 1.0
 
             textbutton _("Back") action Rollback()
