@@ -25,15 +25,16 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 22. Created a new inventory system that tracks the items and weight
 23. Added the ability to add an apple and a sword
 24. Added a core display for the weight in the top center of the menu screen
-25. Added limitation so that weight cannot be greater than 50. 
+25. Added limitation so that weight cannot be greater than 50.
 26. Added buttons to allow display of invdividual items and weights
 27. We just experimented with moving the quick menu from the bottom to the left or right and changing the xpos/ypos.
-28. We modified the screens.rpy file to change the location and formatting of the choice menu button. 
-29. We modified the gui.rpy file to change the position of the menu items to be mid-left aligned 
-30. We changed the default font to use a different font (I used HelveticaNueue). 
-31. We changed the default color of the text to be slightly pink when not clicked. 
+28. We modified the screens.rpy file to change the location and formatting of the choice menu button.
+29. We modified the gui.rpy file to change the position of the menu items to be mid-left aligned
+30. We changed the default font to use a different font (I used HelveticaNueue).
+31. We changed the default color of the text to be slightly pink when not clicked.
 32. Modified the main menu formatting to remove the History, Help, and About buttons
 33. Experimented with changing the location of the main title screen
-34. Changed the formatting and location of the Main Menu depending on startup location. 
+34. Changed the formatting and location of the Main Menu depending on startup location.
+35. Uploaded a video to images/video and made it play in a loop on main menu.
 
-## We are now on lesson 18.
+## We are now on lesson 19.
