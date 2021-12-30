@@ -41,5 +41,9 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 38. Created a new screen called "Game Guide" that will be used for pop ups.
 39. Added two new dialogue lines
 40. Called the Pop Up to display a new message screen.
+41. Added four locations: Home, Shops, Aunt's House, and School.
+42. Created a screen message to let us know which location we are currently in.
+43. Added 4 distinct background images that change based on location specified.
+44. Used Location.lower to make sure that the picture name does not have to be capitalized (i.e. Go Home = home.jpg, Shop = shop.jpg, etc.)
 
-## We are now on lesson 21.
+## We are now on lesson 22.

@@ -4,18 +4,20 @@ image main_bg = im.Scale("bg01.jpeg", 1920, 1080)
 image red01 = "1.png"
 image red02 = "2.png"
 image red03 = "3.png"
+default Location = "Home"
 
 
 label start:
     call variables
-    e "Oi Oi"
-    call screen GameGuide("This is a help message\nThat was a new line.\n\nAnd that was two of them")
-
-    e "That was cool"
     show main_bg
     $ GameRunning = True
     while GameRunning:
+        $ Location_img = Location.lower()
+        if renpy.has_image(Location_img, exact=True):
+            scene expression Location_img
+
         menu:
+            "I am at: [Location]"
             "Add apple":
                 $ Inventory[0].AddItem()
             "Add Sword":
@@ -29,6 +31,14 @@ label start:
             "Display weight":
                 $ wt = Inventory[0].CurrentWeight
                 "The Current Weight is [wt]"
+            "Change location to Shop":
+                $ Location = "Shop"
+            "Change location to Aunt's House":
+                $ Location = "Aunt's House"
+            "Change Location to School":
+                $ Location = "School"
+            "Go Home":
+                $ Location = "Home"
 
     return
 
