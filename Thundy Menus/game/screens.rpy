@@ -216,7 +216,9 @@ screen choice(items):
 
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            hbox:
+                add "bullet.png" yalign 0.5 alpha 0.9
+                textbutton i.caption action i.action
 
 
 ## When this is true, menu captions will be spoken by the narrator. When false,

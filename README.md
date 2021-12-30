@@ -36,5 +36,7 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 33. Experimented with changing the location of the main title screen
 34. Changed the formatting and location of the Main Menu depending on startup location.
 35. Uploaded a video to images/video and made it play in a loop on main menu.
+36. Added a bullet to the icon menu in the game.
+37. Adjusted icon size and opacity.
 
-## We are now on lesson 19.
+## We are now on lesson 20.
