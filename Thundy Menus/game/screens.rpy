@@ -229,7 +229,7 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
+    xalign 0.0
     ypos 405
     yanchor 0.5
 
@@ -254,7 +254,7 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
+        vbox:
             style_prefix "quick"
 
             xalign 0.0
