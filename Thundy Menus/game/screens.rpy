@@ -300,8 +300,10 @@ screen navigation():
 
     vbox:
         style_prefix "navigation"
-
         xpos gui.navigation_xpos
+        if main_menu:
+            xpos 400
+
         yalign 0.5
 
         spacing gui.navigation_spacing
@@ -312,28 +314,19 @@ screen navigation():
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("Main Menu") action MainMenu()
+
+            # textbutton _("History") action ShowMenu("history")
 
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        # textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -402,8 +395,8 @@ style main_menu_vbox:
     xalign 1.0
     xoffset -30
     xmaximum 1200
-    yalign 1.0
-    yoffset -30
+    yalign 0.0
+    # yoffset -30
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
