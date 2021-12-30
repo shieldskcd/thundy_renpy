@@ -38,5 +38,8 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 35. Uploaded a video to images/video and made it play in a loop on main menu.
 36. Added a bullet to the icon menu in the game.
 37. Adjusted icon size and opacity.
+38. Created a new screen called "Game Guide" that will be used for pop ups.
+39. Added two new dialogue lines
+40. Called the Pop Up to display a new message screen.
 
-## We are now on lesson 20.
+## We are now on lesson 21.

@@ -8,6 +8,10 @@ image red03 = "3.png"
 
 label start:
     call variables
+    e "Oi Oi"
+    call screen GameGuide("This is a help message\nThat was a new line.\n\nAnd that was two of them")
+
+    e "That was cool"
     show main_bg
     $ GameRunning = True
     while GameRunning:
