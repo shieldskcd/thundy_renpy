@@ -27,5 +27,6 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 24. Added a core display for the weight in the top center of the menu screen
 25. Added limitation so that weight cannot be greater than 50. 
 26. Added buttons to allow display of invdividual items and weights
+27. We just experimented with moving the quick menu from the bottom to the left or right and changing the xpos/ypos.
 
-## We are now on lesson 15.
+## We are now on lesson 16.
