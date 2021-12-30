@@ -28,5 +28,9 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 25. Added limitation so that weight cannot be greater than 50. 
 26. Added buttons to allow display of invdividual items and weights
 27. We just experimented with moving the quick menu from the bottom to the left or right and changing the xpos/ypos.
+28. We modified the screens.rpy file to change the location and formatting of the choice menu button. 
+29. We modified the gui.rpy file to change the position of the menu items to be mid-left aligned 
+30. We changed the default font to use a different font (I used HelveticaNueue). 
+31. We changed the default color of the text to be slightly pink when not clicked. 
 
-## We are now on lesson 16.
+## We are now on lesson 17.
