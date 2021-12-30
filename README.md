@@ -32,5 +32,8 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 29. We modified the gui.rpy file to change the position of the menu items to be mid-left aligned 
 30. We changed the default font to use a different font (I used HelveticaNueue). 
 31. We changed the default color of the text to be slightly pink when not clicked. 
+32. Modified the main menu formatting to remove the History, Help, and About buttons
+33. Experimented with changing the location of the main title screen
+34. Changed the formatting and location of the Main Menu depending on startup location. 
 
-## We are now on lesson 17.
+## We are now on lesson 18.
