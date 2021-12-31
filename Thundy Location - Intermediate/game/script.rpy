@@ -39,6 +39,8 @@ label start:
                 $ Location = "School"
             "Go Home":
                 $ Location = "Home"
+            "Open Map":
+                $ Location = renpy.call_screen("MapScreen", _layer="screens")
 
     return
 
