@@ -13,18 +13,18 @@ screen MapScreen():
 
         button:
             xpos 486
-            ypos 315
-            text "Aunt's House"
+            ypos 125
+            text "Aunt's"
             action Return("Aunt's House")
 
         button:
-            xpos 508
-            ypos 751
+            xpos 330
+            ypos 380
             text "Shop"
             action Return("Shop")
 
         button:
-            xpos 470
-            ypos 600
+            xpos 410
+            ypos 580
             text "School"
             action Return("School")

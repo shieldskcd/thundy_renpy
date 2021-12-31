@@ -45,5 +45,7 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 42. Created a screen message to let us know which location we are currently in.
 43. Added 4 distinct background images that change based on location specified.
 44. Used Location.lower to make sure that the picture name does not have to be capitalized (i.e. Go Home = home.jpg, Shop = shop.jpg, etc.)
+45. Used a pre-built fantasy map to create a map with coordinates for each location.
+46. Confirmed that user can navigate from one location to another either with menu or with the map.
 
-## We are now on lesson 22.
+## We are now on lesson 23.
