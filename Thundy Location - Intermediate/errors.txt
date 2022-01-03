@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 332: vbox expects a non-empty block.
-    if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-                                                                                     ^
+File "game/scripts/events.rpy", line 67: invalid syntax
+    class Place(object:)
+                       ^
+    
 
 Ren'Py Version: Ren'Py 7.4.9.2142
-Thu Dec 30 16:00:16 2021
+Mon Jan  3 17:21:16 2022

@@ -1,4 +1,5 @@
 init python:
+    import math
     class Calendar(object):
         def __init__(self, Hours, Hour, Days, Day, Months, Month, WeekDays, MonthDays):
             self.Hour = Hour
@@ -63,6 +64,14 @@ init python:
                 CurrentW += (q.weight * q.NoOwned)
             return CurrentW
 
+    class Place(object):
+        def __init__(self, x, y, name, IsActive):
+            self.x = x
+            self.y = y
+            self.name = name
+            self.IsActive = IsActive
+
+    Places = []
     EVENTS = []
     Inventory = []
     t = 0
@@ -70,4 +79,10 @@ init python:
     while t < 50:
         EVENTS.append(Event(0, 0, 0, "", False))
         Inventory.append(Items("none", 0, 0, 0, t))
+        Places.append(Place(0,0,"", False))
         t += 1
+
+    Places[0] = Place(750,500,"Home", True)
+    Places[1] = Place(330,380, "Shop", True)
+    Places[2] = Place(486,125, "Aunt's House", True)
+    Places[3] = Place(410,580, "School", True)
