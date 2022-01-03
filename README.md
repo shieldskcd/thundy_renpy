@@ -47,5 +47,7 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 44. Used Location.lower to make sure that the picture name does not have to be capitalized (i.e. Go Home = home.jpg, Shop = shop.jpg, etc.)
 45. Used a pre-built fantasy map to create a map with coordinates for each location.
 46. Confirmed that user can navigate from one location to another either with menu or with the map.
+47. Changed icons on map to be an object with changeable properties instead of individual items.
+48. Update events to auto generate locations using values in the item property for Places.
 
-## We are now on lesson 23.
+## We are now on lesson 24.
