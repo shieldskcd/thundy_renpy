@@ -17,7 +17,7 @@ label start:
             scene expression Location_img
 
         menu:
-            "I am at: [Location]"
+            "I am at [Location]"
             "Add apple":
                 $ Inventory[0].AddItem()
             "Add Sword":
