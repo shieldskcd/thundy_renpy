@@ -6,4 +6,10 @@ screen SubLocHUD():
         vbox:
             for q in Sublocations:
                 if q.parent == LocationID:
-                    text q.name
+                    button:
+                        text q.name
+                        action Return(q.name)
+
+            button:
+                text "\n\nExit"
+                action Return(Location)

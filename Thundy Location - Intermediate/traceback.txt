@@ -1,42 +1,84 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: Couldn't find file 'video/BurnStar.ogv'.
+  File "game/script.rpy", line 46, in script
+    $ Location = renpy.call_screen("SubLocHUD", _layer="screens")
+  File "game/script.rpy", line 46, in <module>
+    $ Location = renpy.call_screen("SubLocHUD", _layer="screens")
+  File "game/scripts/SubLoc.rpy", line 1, in execute
+    screen SubLocHUD():
+  File "game/scripts/SubLoc.rpy", line 1, in execute
+    screen SubLocHUD():
+  File "game/scripts/SubLoc.rpy", line 2, in execute
+    frame:
+  File "game/scripts/SubLoc.rpy", line 6, in execute
+    vbox:
+  File "game/scripts/SubLoc.rpy", line 7, in execute
+    for q in Sublocations:
+  File "game/scripts/SubLoc.rpy", line 8, in execute
+    if q.parent == LocationID:
+  File "game/scripts/SubLoc.rpy", line 13, in execute
+    button:
+  File "game/scripts/SubLoc.rpy", line 13, in keywords
+    button:
+  File "game/scripts/SubLoc.rpy", line 15, in <module>
+    action Return(location)
+NameError: name 'location' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
+  File "game/script.rpy", line 46, in script
+    $ Location = renpy.call_screen("SubLocHUD", _layer="screens")
   File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
+  File "game/script.rpy", line 46, in <module>
+    $ Location = renpy.call_screen("SubLocHUD", _layer="screens")
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/exports.py", line 3134, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
   File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/ui.py", line 298, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 4020, in interact_core
-    renpy.audio.audio.periodic()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/audio/audio.py", line 1162, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/audio/audio.py", line 1140, in periodic_thread_main
-    periodic_pass()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/audio/audio.py", line 1082, in periodic_pass
-    c.periodic()
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/audio/audio.py", line 518, in periodic
-    topf = load(filename)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/audio/audio.py", line 69, in load
-    rv = renpy.loader.load(fn)
-  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/loader.py", line 798, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'video/BurnStar.ogv'.
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/core.py", line 3735, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "/Users/daveshields/Documents/RenPy/renpy-7.4.9-sdk/renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/scripts/SubLoc.rpy", line 1, in execute
+    screen SubLocHUD():
+  File "game/scripts/SubLoc.rpy", line 1, in execute
+    screen SubLocHUD():
+  File "game/scripts/SubLoc.rpy", line 2, in execute
+    frame:
+  File "game/scripts/SubLoc.rpy", line 6, in execute
+    vbox:
+  File "game/scripts/SubLoc.rpy", line 7, in execute
+    for q in Sublocations:
+  File "game/scripts/SubLoc.rpy", line 8, in execute
+    if q.parent == LocationID:
+  File "game/scripts/SubLoc.rpy", line 13, in execute
+    button:
+  File "game/scripts/SubLoc.rpy", line 13, in keywords
+    button:
+  File "game/scripts/SubLoc.rpy", line 15, in <module>
+    action Return(location)
+NameError: name 'location' is not defined
 
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.9.2142
 Thundy Inventory 1.0
-Thu Dec 30 16:23:27 2021
+Wed Jan  5 15:40:20 2022

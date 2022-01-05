@@ -97,7 +97,6 @@ style frame:
 
 screen say(who, what):
     style_prefix "say"
-    use SubLocHUD
 
     frame:
         xpos 0 ypos 0

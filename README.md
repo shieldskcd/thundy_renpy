@@ -61,5 +61,8 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 58. Confirmed that the list of Sublocations in House are properly generating at run time.
 59. Configured Screens to launch the HUD in any location that has Sub Locations.
 60. Moved the quick menu to centrally located along the bottom of the screen as its location was interfering with menus.
+61. Added images to draw new rooms in the House SubLocations
+62. Created an action to allow us to move to different Sublocations in the map using the Sublocation pop up.
+63. Created an "exit" button which allows us to return to the Parent location if Sublocations exist.
 
-## We are now on lesson 27.
+## We are now on lesson 28.

@@ -42,6 +42,8 @@ label start:
                 $ Location = "Home"
             "Open Map":
                 $ Location = renpy.call_screen("MapScreen", _layer="screens")
+            "Visit sub-location":
+                $ Location = renpy.call_screen("SubLocHUD", _layer="screens")
 
     return
 
