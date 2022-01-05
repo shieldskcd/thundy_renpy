@@ -54,5 +54,12 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 51. Tweaked the locations of the Shop and School a bit because they were off center.
 52. Created an hbox to house the button and the icon of our map locations.
 53. Used yalign to center the text alongside the button.
+54. Created a new class to hold SubLocations, namely, locations within an existing location.
+55. Created 4 rooms in "House": Kitchen, Bathroom, Bedroom, and Game Room.
+56. Created a new screen that serves as a HeadsUp display (HUD) to let you know what rooms are accessible in the house.
+57. Positioned the HUD in the top right corner of the screen to be easier to find.
+58. Confirmed that the list of Sublocations in House are properly generating at run time.
+59. Configured Screens to launch the HUD in any location that has Sub Locations.
+60. Moved the quick menu to centrally located along the bottom of the screen as its location was interfering with menus.
 
-## We are now on lesson 26.
+## We are now on lesson 27.

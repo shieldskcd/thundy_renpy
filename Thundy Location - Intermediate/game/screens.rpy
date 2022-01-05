@@ -97,6 +97,7 @@ style frame:
 
 screen say(who, what):
     style_prefix "say"
+    use SubLocHUD
 
     frame:
         xpos 0 ypos 0
@@ -256,10 +257,10 @@ screen quick_menu():
 
     if quick_menu:
 
-        vbox:
+        hbox:
             style_prefix "quick"
 
-            xalign 0.0
+            xalign 0.5
             yalign 1.0
 
             textbutton _("Back") action Rollback()

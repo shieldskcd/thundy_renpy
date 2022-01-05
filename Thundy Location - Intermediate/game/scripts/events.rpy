@@ -57,6 +57,7 @@ init python:
                 return
             else:
                 self.NoOwned += 1
+
         @property
         def CurrentWeight(self):
             CurrentW = 0
@@ -65,17 +66,36 @@ init python:
             return CurrentW
 
     class Place(object):
-        def __init__(self, x, y, name, IsActive):
+        def __init__(self, ID, x, y, name, IsActive):
+            self.ID = ID
             self.x = x
             self.y = y
             self.name = name
             self.IsActive = IsActive
+
         @property
         def avatar(self):
             icon = "icons/" + self.name.lower() + "_icon.png"
             return(icon)
 
+        @property
+        def rooms(self):
+            outlist = []
+            for q in Sublocations:
+                if q.parent == self.ID:
+                    outlist.append(q.ID)
+            return outlist
+
+    class SubPlace(object):
+        def __init__(self, ID, parent, name, IsActive):
+            self.ID = ID
+            self.parent = parent
+            self.name = name
+            self.IsActive = IsActive
+
+
     Places = []
+    Sublocations = []
     EVENTS = []
     Inventory = []
     t = 0
@@ -83,10 +103,16 @@ init python:
     while t < 50:
         EVENTS.append(Event(0, 0, 0, "", False))
         Inventory.append(Items("none", 0, 0, 0, t))
-        Places.append(Place(0,0,"", False))
+        Places.append(Place(t, 0,0,"", False))
+        Sublocations.append(SubPlace(t, -1,"", False))
         t += 1
 
-    Places[0] = Place(750,500,"Home", True)
-    Places[1] = Place(380,380, "Shop", True)
-    Places[2] = Place(486,125, "Aunt's House", True)
-    Places[3] = Place(430,590, "School", True)
+    Places[0] = Place(0, 750,500,"Home", True)
+    Places[1] = Place(1, 380,380, "Shop", True)
+    Places[2] = Place(2, 486,125, "Aunt's House", True)
+    Places[3] = Place(3, 430,590, "School", True)
+
+    Sublocations[0] = SubPlace(0, 0, "Bathroom", True)
+    Sublocations[1] = SubPlace(1, 0, "Bedroom", True)
+    Sublocations[2] = SubPlace(2, 0, "Kitchen", True)
+    Sublocations[3] = SubPlace(3, 0, "Game Room", True)

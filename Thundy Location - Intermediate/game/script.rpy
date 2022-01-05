@@ -5,6 +5,7 @@ image red01 = "1.png"
 image red02 = "2.png"
 image red03 = "3.png"
 default Location = "Home"
+default LocationID = 0
 
 
 label start:

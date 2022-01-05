@@ -14,8 +14,8 @@ screen MapScreen():
                         yalign 0.5
                         hover q.avatar
                         idle q.avatar
-                        action Return(q.name)
+                        action SetVariable("LocationID", q.ID), Return(q.name)
                     button:
                         yalign 0.5
                         text q.name size 18
-                        action Return(q.name)
+                        action SetVariable("LocationID", q.ID), Return(q.name)
