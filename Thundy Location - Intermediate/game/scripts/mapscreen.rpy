@@ -7,9 +7,15 @@ screen MapScreen():
         background "map.jpeg"
         for q in Places:
             if q.IsActive:
-                imagebutton:
+                hbox:
                     xpos q.x
                     ypos q.y
-                    hover q.avatar
-                    idle q.avatar
-                    action Return(q.name)
+                    imagebutton:
+                        yalign 0.5
+                        hover q.avatar
+                        idle q.avatar
+                        action Return(q.name)
+                    button:
+                        yalign 0.5
+                        text q.name size 18
+                        action Return(q.name)

@@ -52,5 +52,7 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 49. Created icons to represent the locations in the map.
 50. Modified event code to replace the words of the locations with the images instead.
 51. Tweaked the locations of the Shop and School a bit because they were off center.
+52. Created an hbox to house the button and the icon of our map locations.
+53. Used yalign to center the text alongside the button.
 
-## We are now on lesson 25.
+## We are now on lesson 26.
