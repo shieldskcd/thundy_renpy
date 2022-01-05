@@ -70,6 +70,10 @@ init python:
             self.y = y
             self.name = name
             self.IsActive = IsActive
+        @property
+        def avatar(self):
+            icon = "icons/" + self.name.lower() + "_icon.png"
+            return(icon)
 
     Places = []
     EVENTS = []
@@ -83,6 +87,6 @@ init python:
         t += 1
 
     Places[0] = Place(750,500,"Home", True)
-    Places[1] = Place(330,380, "Shop", True)
+    Places[1] = Place(380,380, "Shop", True)
     Places[2] = Place(486,125, "Aunt's House", True)
-    Places[3] = Place(410,580, "School", True)
+    Places[3] = Place(430,590, "School", True)

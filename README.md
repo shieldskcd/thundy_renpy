@@ -49,5 +49,8 @@ This is the Thundy Games tutorial for Development with Ren'Py. As this game gets
 46. Confirmed that user can navigate from one location to another either with menu or with the map.
 47. Changed icons on map to be an object with changeable properties instead of individual items.
 48. Update events to auto generate locations using values in the item property for Places.
+49. Created icons to represent the locations in the map.
+50. Modified event code to replace the words of the locations with the images instead.
+51. Tweaked the locations of the Shop and School a bit because they were off center.
 
-## We are now on lesson 24.
+## We are now on lesson 25.

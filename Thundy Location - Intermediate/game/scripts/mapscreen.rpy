@@ -7,8 +7,9 @@ screen MapScreen():
         background "map.jpeg"
         for q in Places:
             if q.IsActive:
-                button:
+                imagebutton:
                     xpos q.x
                     ypos q.y
-                    text q.name
+                    hover q.avatar
+                    idle q.avatar
                     action Return(q.name)
